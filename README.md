@@ -35,10 +35,31 @@ Arquitectura:
 * Se creo otro folder dentro del folder api, llamado v1, por lo que el directory quedo de la siguiente forma app/controllers/api/v1
 * Usaremos el nombre api para gestionar los endpoints del api
 
+Gems:
+
+* bcrypt: se utilizara para generar un hash para el password del usuario
+* Las gemas se agregan en el gemfile
+
 Formato MIME:
 
 * Rails soporta 35 tipos de archivos multimedia
 * En mi caso usare JSON y debo especificarlo en el config/routes.rb
+
+
+Modelos:
+
+* User: email, password_digest
+
+
+
+Pruebas Unitarias:
+
+* Usare Minitest que es un framework que viene por defecto en Rails
+* Los fixtures estan definidos en un archivo YAML en el directory test/fixtures. hay un archivo por plantilla.
+
+Codigos HTTP:
+200: OK
+404: N FOUND
 
 Things you may want to cover:
 
